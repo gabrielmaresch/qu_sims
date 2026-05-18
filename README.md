@@ -7,13 +7,16 @@ Small quantum simulation experiments in Julia, focused on:
 
 ## Repository contents
 
-- `/home/runner/work/qu_sims/qu_sims/adiabatic_transitions.jl`  
+- `adiabatic_transitions.jl`  
   Julia script that computes adiabatic transition probabilities and exports an interactive HTML plot to `adiabatic.html`.
-- `/home/runner/work/qu_sims/qu_sims/adiabatic_simulation.ipynb`  
+
+- `adiabatic_simulation.ipynb`  
   Notebook version of the adiabatic transition workflow.
-- `/home/runner/work/qu_sims/qu_sims/bose_hubbard.ipynb`  
+
+- `bose_hubbard.ipynb`  
   Notebook for Bose-Hubbard mean-field simulations and phase visualization.
-- `/home/runner/work/qu_sims/qu_sims/Project.toml`  
+
+- `Project.toml`  
   Julia project metadata.
 
 ## Requirements
@@ -22,7 +25,7 @@ Small quantum simulation experiments in Julia, focused on:
 
 ## Setup
 
-From the repository root (`/home/runner/work/qu_sims/qu_sims`):
+From the repository root:
 
 ```bash
 julia --project=. -e 'using Pkg; Pkg.instantiate()'
@@ -33,10 +36,14 @@ julia --project=. -e 'using Pkg; Pkg.instantiate()'
 ### Adiabatic transitions script
 
 ```bash
-julia --project=. /home/runner/work/qu_sims/qu_sims/adiabatic_transitions.jl
+julia --project=. adiabatic_transitions.jl
 ```
 
-This generates `/home/runner/work/qu_sims/qu_sims/adiabatic.html`.
+This generates:
+
+```text
+adiabatic.html
+```
 
 ### Notebooks
 
@@ -48,9 +55,9 @@ julia --project=. -e 'using IJulia; notebook()'
 
 Then open:
 
-- `/home/runner/work/qu_sims/qu_sims/adiabatic_simulation.ipynb`
-- `/home/runner/work/qu_sims/qu_sims/bose_hubbard.ipynb`
+- `adiabatic_simulation.ipynb`
+- `bose_hubbard.ipynb`
 
 ## License
 
-MIT — see `/home/runner/work/qu_sims/qu_sims/LICENSE`.
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE).
